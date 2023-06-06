@@ -1,0 +1,56 @@
+.addData {
+  height: 60vh;
+  width: 30vw;
+  padding: 5vh 2vw;
+  border: 1px solid black;
+  border-radius: 4px;
+  position: fixed;
+  top: 16vh;
+  left: 35vw;
+}
+.addData h1 {
+  display: flex;
+  justify-content: center;
+}
+.addData form .forms p {
+  font-size: 3vh;
+  font-weight: 600;
+  width: 100%;
+  padding-bottom: 1vh;
+}
+.addData form .forms input {
+  height: 5vh;
+  width: 100%;
+  margin-bottom: 2vh;
+}
+
+.addData form .forms button {
+  height: 6vh;
+  width: 100%;
+  background-color: rgb(171, 168, 168);
+  border: none;
+  border-radius: 4px;
+  font-size: 3vh;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .addData {
+    width: 75vw;
+    position: fixed;
+    left: 12vw;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .addData {
+    width: 45vw;
+    position: fixed;
+    left: 28vw;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1260px) {
+  .addData {
+    width: 35vw;
+  }
+}

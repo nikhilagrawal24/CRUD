@@ -1,0 +1,33 @@
+<div class="addData">
+  <h1>Add User</h1>
+  <form (ngSubmit)="submitData()">
+    <div class="forms">
+      <p>Name</p>
+      <input
+        type="text"
+        placeholder="Add name"
+        id="name"
+        name="name"
+        [(ngModel)]="user.name"
+      />
+      <p>Email</p>
+      <input
+        type="email"
+        placeholder="Add email"
+        id="email"
+        name="email"
+        [(ngModel)]="user.email"
+      />
+      <p>Number</p>
+      <input
+        type="number"
+        placeholder="Add number"
+        id="number"
+        name="number"
+        [(ngModel)]="user.number"
+      />
+      <br />
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</div>

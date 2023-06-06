@@ -1,0 +1,22 @@
+<div class="dataTable">
+  <table class="table">
+    <tr class="column">
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Number</th>
+      <th scope="col">Action</th>
+    </tr>
+  
+    <tr class="row" *ngFor="let user of users">
+      <th class="table-items">{{user.id}}</th>
+      <th class="table-items">{{user.name}}</th>
+      <th class="table-items">{{user.email}}</th>
+      <th class="table-items">{{user.number}}</th>
+      <th>
+        <button class="UpdateButton btn" (click)="updateUser(user.id)">Update</button>
+        <button class="DeleteButton btn" (click)="deleteUser(user.id)">Delete</button>
+      </th>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,68 @@
+.dataTable {
+  width: 95vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 14vh;
+}
+.table {
+  height: 100%;
+  width: 70vw;
+  padding: 4vh 2vw;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.column {
+  height: 7vh;
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+
+.row .table-items {
+  font-size: 3vh;
+  font-weight: 500;
+  padding: 6px 0px;
+}
+
+.btn {
+  height: 5vh;
+  width: 6vw;
+  border: none;
+  font-size: 2vh;
+  font-weight: 600;
+  border-radius: 4px;
+  color: white;
+}
+.UpdateButton {
+  background-color: rgb(13, 13, 69);
+}
+.DeleteButton {
+  background-color: rgb(121, 36, 36);
+  margin-left: 5px;
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .dataTable {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .table {
+    width: 100vw;
+    padding: 4vh 0vw;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .table {
+    width: 90vw;
+    padding: 4vh 2vw;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1260px) {
+  .table {
+    width: 80vw;
+    padding: 4vh 2vw;
+  }
+}

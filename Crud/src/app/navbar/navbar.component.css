@@ -1,0 +1,45 @@
+nav {
+  background-color: rgb(171, 168, 168);
+  height: 10vh;
+  width: 100vw;
+  padding: 0vh 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: black;
+  font-size: 5vh;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+nav .nav-items {
+  height: 100%;
+  width: 13vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-items a {
+  width: 7vw;
+  font-size: 3vh;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  padding: 6px;
+}
+nav .nav-items a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  nav .nav-items {
+    width: 22vw;
+  }
+}
